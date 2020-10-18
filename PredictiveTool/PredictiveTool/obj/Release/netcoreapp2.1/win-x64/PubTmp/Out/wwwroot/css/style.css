@@ -1,0 +1,182 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.body__wrapper {
+  width: 100vw;
+  height: 100vh;
+  background: url(/images/bg.png) no-repeat center;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.__logo {
+  padding: 1rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.center__logo {
+  position: absolute;
+  font-family: serif;
+  font-weight: bold;
+  font-size: 0.8em;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.center__logo h2 {
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: normal;
+}
+
+.nav__content {
+  width: 600px;
+  height: 600px;
+  background-size: contain;
+  position: relative;
+}
+
+.nav__content .content__bg {
+  -webkit-animation: rotation 10s linear 2s infinite;
+          animation: rotation 10s linear 2s infinite;
+}
+
+@-webkit-keyframes rotation {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  25% {
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+  }
+  50% {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+  }
+  75% {
+    -webkit-transform: rotate(270deg);
+            transform: rotate(270deg);
+  }
+  100% {
+    -webkit-transform: rotate(359deg);
+            transform: rotate(359deg);
+  }
+}
+
+@keyframes rotation {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  25% {
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+  }
+  50% {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+  }
+  75% {
+    -webkit-transform: rotate(270deg);
+            transform: rotate(270deg);
+  }
+  100% {
+    -webkit-transform: rotate(359deg);
+            transform: rotate(359deg);
+  }
+}
+
+.nav {
+  width: 7.3em;
+  height: 7.3em;
+  background-color: #fff;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: absolute;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.nav p a {
+  font-size: 0.7rem;
+   font-weight: bold;
+   font-family: serif;
+   text-decoration:none;
+   color:black;
+}
+
+.nav.nav-1 {
+  top: 1.35%;
+  left: 40.4%;
+}
+
+.nav.nav-2 {
+  top: 12.8%;
+  left: 68%;
+}
+
+.nav.nav-3 {
+  top: 40.5%;
+  left: 79.5%;
+}
+
+.nav.nav-4 {
+  bottom: 12.4%;
+  left: 68%;
+}
+
+.nav.nav-5 {
+  bottom: 1%;
+  left: 40.25%;
+}
+
+.nav.nav-6 {
+  bottom: 12.5%;
+  left: 12.55%;
+}
+
+.nav.nav-7 {
+  top: 40.4%;
+  left: 1.2%;
+}
+
+.nav.nav-8 {
+  top: 12.7%;
+  left: 12.4%;
+}
+/*# sourceMappingURL=style.css.map */

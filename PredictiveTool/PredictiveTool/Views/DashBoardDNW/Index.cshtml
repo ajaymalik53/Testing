@@ -1,0 +1,138 @@
+﻿@model PredictiveTool.Models.PredAnalysisModel
+
+@{
+    var test = ViewContext.RouteData.Values["Action"].ToString();
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_LayoutMain.cshtml";
+}
+<div class="innerdiv">
+    <div>
+        <div role="form" class='form-horizontal'>
+
+            <div class="form-group">
+                <div class="col-xs-2 text-left datamargin">
+                    <label class="label Data" for="cpTitle">Sectors </label>
+                </div>
+                <div class="col-xs-3 mar">
+                    @Html.DropDownListFor(x => x.SectorID, ViewBag.UserName as IEnumerable<SelectListItem>, "Select", new { @class = "form-control DDN", id = "ddlSectorID" })
+                </div>
+                <div class="col-xs-2 chkmar">
+                    <input id="70" type="button" onclick="return tabClick(this);" class="btn input sm-lg btn-block dnwbtn" value="All" />
+                </div>
+                <div class="col-xs-1">
+                    <div class="checkbox">
+                        <label>
+                            <input id="hdntab" style="display:none" />
+                            <input id="chkdataID" class="Cbox" type="checkbox"> Data
+                        </label>
+                    </div>
+                </div>
+                <div class="col-xs-3">
+                    <div class="checkbox">
+                        <label>
+                            <input id="chkgpID" class="Cbox" type="checkbox"> Graph
+                        </label>
+                    </div>
+                </div>
+
+            </div>
+            <div class="row" style="padding-left:10px;">
+               
+            </div>
+
+
+            @*<div class="form-group">
+                    <div class="col-xs-2 text-left">
+                        <label class="label Graph" for="cpDesc">Graph</label>
+                    </div>
+
+                </div>
+                <div class="mattop">
+
+                    <button id="15" onclick="return tabClick(this);" class="btn bgagr">Agriculture</button><button id="16" onclick="return tabClick(this);" class="btn bgmq">Mining & Quarrying</button>
+                    <button id="17" onclick="return tabClick(this);" class="btn bgmnu">Manufacturing</button><button id="18" onclick="return tabClick(this);" class="btn bgwsl">WholeSale</button>
+                    <button id="19" class="btn bgTrans" onclick="return tabClick(this);">Transport</button><button id="20" class="btn bgUne" onclick="return tabClick(this);">Youth Unemployment</button>
+                </div>*@
+
+            <div class="col-xs-12 col-sm-12 divblock">
+                <span>Date Range</span>
+            </div>
+            <br />
+            <br />
+            <br />
+            <div class="row" style="margin-top:25px">
+                <div class="col-md-6">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label class="col-md-4 control-label">Year From</label>
+                            <div class="col-md-8">
+                                <div class='input-group date' id='datetimepicker1'>
+                                    <input id="dtidfrom" type='date' class="form-control input-lg" />
+                                    <span class="input-group-addon">
+                                        <span style="color:black!important" class="glyphicon glyphicon-calendar"></span>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label class="col-md-2 control-label">To</label>
+                            <div class="col-md-8">
+                                <div class='input-group date' id='datetimepicker1'>
+                                    <input id="dtidto" type='date' class="form-control input-lg" />
+                                    <span class="input-group-addon">
+                                        <span style="color:black!important" class="glyphicon glyphicon-calendar"></span>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <button type="submit" onclick="return submitclick();" class="btn btn-sm  subbtn"> Submit</button>
+                </div>
+            </div>
+            <div id="divdataID" style="display:none">
+                <div class="col-xs-12 col-sm-12 divblock">
+                    <span>Data</span>
+                </div>
+                <div class="tab-pane fade active in" id="sub11">
+                    <div class="tbldicscrol" id="tblData"></div>
+                </div>
+            </div>
+            <div id="divgraphID" style="display:none">
+                <div class="col-xs-12 col-sm-12 divblock">
+                    <span>Graph</span>
+                    <div class="intbtn">
+                    <button id="btn5y" onclick="return YearlyFilter(this);">10y</button>
+                    <button id="btn3y" onclick="return YearlyFilter(this);">5y</button>
+                    <button id="btn1y" onclick="return YearlyFilter(this);">3y</button>
+                      </div>
+                </div>
+                <div id="divchartID" class="tab-pane fade active in Outchartdivclass" id="sub11">
+                    <div id="container" style="width:100%; height:400px;"></div>
+                </div>
+                <div class="col-xs-12 col-sm-12 divblock"><span>Variance</span></div>
+                <div  id="rowaccuracyID" class="wrapper">
+                    @*<div id="rowaccuracyID" style="text-align:center" class="wrapper">
+
+
+                    </div>*@
+                </div>
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+
+</div>
+
+
+
+
+
+

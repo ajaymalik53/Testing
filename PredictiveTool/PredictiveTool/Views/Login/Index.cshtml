@@ -1,0 +1,76 @@
+﻿@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>CCMA | Home</title>
+    <meta name="description"
+          content="Examples for creative website header animations using Canvas and JavaScript" />
+    <meta name="keywords"
+          content="header, canvas, animated, creative, inspiration, javascript" />
+    <meta name="author" content="Codrops" />
+    <link rel="shortcut icon" href="../favicon.ico" />
+     <link href="~/css/normalize.css" rel="stylesheet" />
+    <link href="~/css/component.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap"
+          rel="stylesheet" />
+    <!--[if IE]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+</head>
+<body>
+    <div class="container demo-1">
+        <div class="content">
+            @*<div>
+                <img src="~/images/ccma-logo.png" />
+            </div>*@
+            <div id="large-header" class="large-header">
+                <canvas id="demo-canvas"></canvas>
+                <div class="content-wrapper">
+                    <img src="~/images/ccma-logo.png" />
+                    <h1 class=""></h1>
+                    <p class="">
+                        The Commission for Conciliation Mediation & Arbitration (CCMA)&apos;s Conflict Predictive Tool brings together advanced analytics
+                        spanning from ad-hoc statistical analyses, predictive modelling, data mining, text analytics, data optimization,
+                        real-time scoring and machine learning aimed at ensuring that the predictive analyses ran from this tool are reliable
+                        and that they encompass most of the variables that contribute to potential conflict in the South African labour market.
+                        It needs to be noted that the variables considered herein are not an exhaustive representation, as in its nature,
+                        conflict is a subjective phenomenon, but that they provide a guide to
+                        the likelihood of conflict arising in the labour market based on the algorithm built into the tool.
+                    </p>
+                    <p style="padding-bottom: 0;">
+                        Through this tool, the CCMA aims to become a catalyst of proactive dispute management within South Africa.
+                        The tool will strategically position the CCMA to respond to labour unrest through its array of dispute prevention & management approaches by sector; all geared towards stabilising the labour market.
+                        Thus, fundamentally transforming the CCMA&apos;s service offering and stakeholder engagement by systematically
+                        being able to address stakeholders’ pre-emptive needs as brought on by the interplay of the variables in
+                        the CCMA&apos;s Conflict Predictive Tool. Through this CCMA&apos;s Conflict Predictive Tool,
+                        you will be able to forecast conflict by Unemployment Rate by province/sector, the Inflation Rate,
+                        the fluctuations in our CCMA cases and the geographical positioning of where there is a likelihood of conflict arising.
+                    </p>
+                    <p style="padding-bottom: 0;">
+                        As this is a pilot version which will be subjected to further rigorous enhancements,
+                        it is envisaged that the CCMA&apos;s Conflict Predictive Tool will in future be deployed
+                        to a number of labour institutions, agencies and councils within the South African labour market.
+                    </p>
+
+                        <a asp-area="" asp-controller="Home" asp-action="Index1" class="fancy-button pop-onhover bg-gradient1">
+                            <span>Explore</span>
+                        </a>
+                </div>
+                <div class="image-1">
+                    <img src="~/images/image-1.png" />
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /container -->
+    <script src="~/js/TweenLite.min.js"></script>
+    <script src="~/js/EasePack.min.js"></script>
+    <script src="~/js/demo-1.js"></script>
+</body>
+</html>

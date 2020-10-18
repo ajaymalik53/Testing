@@ -1,0 +1,116 @@
+﻿@model PredictiveTool.Models.PredAnalysisModel
+
+@{
+    var test = ViewContext.RouteData.Values["Action"].ToString();
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_LayoutMain.cshtml";
+}
+<div class="innerdiv">
+    <div>
+        <div role="form" class='form-horizontal'>
+
+            <div class="form-group">
+                <div class="col-xs-2 text-left datamargin">
+                    <label class="label Data" for="cpTitle">Sectors </label>
+                </div>
+                <div class="col-xs-3 mar">
+                    @Html.DropDownListFor(x => x.SectorID, ViewBag.UserName as IEnumerable<SelectListItem>, "Select", new { @class = "form-control DDN", id = "ddlSectorID" })
+                </div>
+                <div class="col-xs-1 chkmar">
+                    <div class="checkbox">
+                        <label>
+                            <input id="hdntab" style="display:none" />
+                            <input id="chkdataID" class="Cbox" type="checkbox"> Data
+                        </label>
+                    </div>
+                </div>
+                <div class="col-xs-3 chkmar">
+                    <div class="checkbox">
+                        <label>
+                            <input id="chkgpID" class="Cbox" type="checkbox"> Graph
+                        </label>
+                    </div>
+                </div>
+
+            </div>
+           
+            <div class="col-xs-12 col-sm-12 divblock">
+                <span>Date Range</span>
+            </div>
+            <br />
+            <br />
+            <br />
+            <div class="row" style="margin-top:25px">
+                <div class="col-md-6">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label class="col-md-4 control-label">Year From</label>
+                            <div class="col-md-8">
+                                <div class='input-group date' id='datetimepicker1'>
+                                    <input id="dtidfrom" type='date' class="form-control input-lg" />
+                                    <span class="input-group-addon">
+                                        <span style="color:black!important" class="glyphicon glyphicon-calendar"></span>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label class="col-md-2 control-label">To</label>
+                            <div class="col-md-8">
+                                <div class='input-group date' id='datetimepicker1'>
+                                    <input id="dtidto" type='date' class="form-control input-lg" />
+                                    <span class="input-group-addon">
+                                        <span style="color:black!important" class="glyphicon glyphicon-calendar"></span>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <button type="submit" onclick="return submitclick();" class="btn btn-sm  subbtn"> Submit</button>
+                </div>
+            </div>
+            <div id="divdataID" style="display:none">
+                <div class="col-xs-12 col-sm-12 divblock">
+                    <span>Data</span>
+                </div>
+                <div class="tab-pane fade active in" id="sub11">
+                    <div class="tbldicscrol" id="tblData"></div>
+                </div>
+            </div>
+            <div id="divgraphID" style="display:none">
+                <div class="col-xs-12 col-sm-12 divblock">
+                    <span>Graph</span>
+                    <div class="intbtn">
+                    <button id="btn5y" onclick="return YearlyFilter(this);">10y</button>
+                    <button id="btn3y" onclick="return YearlyFilter(this);">5y</button>
+                    <button id="btn1y" onclick="return YearlyFilter(this);">3y</button>
+                     </div>
+                </div>
+                <div id="divchartID" class="tab-pane fade active in Outchartdivclass" id="sub11">
+                    <div id="container" style="width:100%; height:400px;"></div>
+                </div>
+                <div class="col-xs-12 col-sm-12 divblock"><span>Accuracy</span></div>
+                <div id="rowaccuracyID" class="wrapper">
+
+                </div>
+            </div>
+            </div>
+
+        </div>
+        
+
+
+    </div>
+
+    
+
+</div>
+@*<script src="~/lib/jquery/dist/jquery.js"></script>
+<script src="~/lib/jquery/dist/HighChart.js"></script>*@
+
+
+

@@ -1,0 +1,271 @@
+﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification\ 
+for details on configuring this project to bundle and minify static web assets. */
+body {
+    overflow: hidden;
+    background-color: #424242;
+    font-size: 15px;
+}
+.highcharts-button, .highcharts-legend, .highcharts-container > svg > text {
+    fill: white;
+}
+a {
+    font-size: 19px;
+    padding-right: 1%;
+}
+
+img {
+    width: 100%;
+    height: 592px;
+}
+
+.fontclass {
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-size: 40px;
+}
+    .fontclass h3{
+        font-size:30px !important;
+    }
+
+        .fontclass h3 a{
+            color:red;
+        }
+
+        .fontclassfooter {
+            text-align: start;
+            color: rgb(255, 255, 255);
+            font-weight: bold;
+        }
+
+.btn-circle.btn-xl {
+    width: 70px !important;
+    height: 70px;
+    padding: 10px 16px;
+    font-size: 24px;
+    line-height: 1.33;
+    border-radius: 35px;
+}
+/*.btn-circle.btn-xl {
+    width: 70px;
+    height: 70px;
+    padding: 10px 16px;
+    border-radius: 35px;
+    font-size: 12px;
+    text-align: center;
+}*/ 
+
+.Cbox {
+    transform: scale(2.5);
+}
+.clickclass {
+    border-width: 4px !important;
+}
+.menuclickclass {
+    background-color:darkgray;
+}
+.label {
+    color: white;
+    font-family: Arial;
+    
+ }
+.mar {
+    margin-left: 5%;
+}
+.mattop {
+    margin-left: 21%;
+    margin-top: -3%;
+}
+.agb {
+    background-color: rgb(207, 241, 173)
+}
+
+.btn {
+    border: 0px solid black;
+    color: black;
+    font-size: 16px;
+    cursor: pointer;
+    margin: .2%;
+    font-family: "Source Sans Pro";
+    font-weight: bold;
+    font-style: normal;
+    text-decoration: none;
+    font-size: 18px;
+    color: black;
+}
+
+/* Green */
+.bgagr {
+    background: linear-gradient(rgba(112, 225, 0, 0.7), rgba(240, 240, 240, 0.5));
+    padding: 14px 47px;
+    /*background-color: #bae88d;*/
+    /*background-color: rgba(112, 225, 0, 0.7);*/
+}
+
+    .bgagr:hover {
+        background-color: gray !important
+    }
+
+/* Blue */
+.bgmq {
+    background: linear-gradient(rgba(41, 240, 240, 0.5), rgba(240, 240, 240, 0.5));
+    padding: 13px 34px;
+}
+
+    .bgmq:hover {
+        background: #2196F3;
+        color: white;
+    }
+
+/* Orange */
+.bgmnu {
+    background: linear-gradient(rgba(156, 39, 176, 0.6), rgba(224, 224, 224, 0.6));
+    padding: 14px 47px;
+}
+
+    .bgmnu:hover {
+        background: #ff9800;
+        color: white;
+    }
+
+/* Red */
+.bgwsl {
+    background: linear-gradient(rgba(254, 66, 50, 0.6), rgba(224, 224, 224, 0.6));
+    padding: 14px 47px;
+}
+
+.divblock {
+    background-color: black;
+    height: 23px;
+    width: 100%;
+    margin-top: 2%;
+    font-size: 20px;
+    font-weight: bold;
+}
+.divblock1 {
+    background-color: black;
+    height: 23px;
+    width: 100%;
+    margin-top: 2%;
+}
+
+.bgwsl:hover {
+    background-color: gray !important
+}
+
+/* Gray */
+.bgTrans {
+    background: linear-gradient(rgba(255, 152, 0, 0.6), rgba(224, 224, 224, 0.6));
+    padding: 14px 47px;
+}
+
+    .bgTrans:hover {
+        background: #e7e7e7;
+    }
+
+.bgUne {
+    background: linear-gradient(rgba(16, 52, 242, 0.6), rgba(224, 224, 224, 0.6));
+    padding: 13px 34px;
+}
+
+    .bgUne:hover {
+        background: #e7e7e7;
+    }
+
+    .menu>li>a{
+        color:white !important;
+    }
+  a:hover {
+    background-color: gray !important
+}
+
+.DDN {
+    height: 47px;
+    font-size: 23px;
+    margin: -5%;
+}
+
+.datarange {
+    text-align: right;
+    margin-top: 21%;
+}
+.dtinclass {
+    width: 100%;
+    height: 50px;
+}
+
+.Data {
+    padding-top: 10%;
+    padding-bottom: 10%;
+    padding-left: 46%;
+    padding-right: 46%;
+    font-size: 100%;
+    background-color: black;
+}
+.subbtn {
+    padding-top: 5%;
+    padding-bottom: 4%;
+    padding-left: 20%;
+    padding-right: 20%;
+    font-size: 100%;
+    background-color: black;
+}
+.Graph {
+    padding-top: 10%;
+    padding-bottom: 11%;
+    padding-left: 44%;
+    padding-right: 44%;
+    font-size: 100%;
+    background-color: black;
+}
+span {
+    color: white;
+    font-family: Arial;
+    font-size:40px;
+    }
+.Cbtn {
+    background-color: #ddd;
+    border: none;
+    color: black;
+    padding: 16px 32px;
+    text-align: center;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition: 0.3s;
+}
+
+    .Cbtn:hover {
+        background-color: steelblue;
+        color: white;
+    }
+
+/* Wrapping element */
+/* Set some basic padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Carousel */
+.carousel-caption p {
+    font-size: 20px;
+    line-height: 1.4;
+}
+
+/* Make .svg files in the carousel display properly in older browsers */
+.carousel-inner .item img[src$=".svg"] {
+    width: 100%;
+}
+
+/* QR code generator */
+#qrCode {
+    margin: 15px;
+}
+
+/* Hide/rearrange for smaller screens */
+@media screen and (max-width: 767px) {
+    /* Hide captions */
+    .carousel-caption {
+        display: none;
+    }
+}

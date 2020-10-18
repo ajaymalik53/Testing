@@ -1,0 +1,200 @@
+﻿
+@{
+    Layout = null;
+}
+
+
+<!DOCTYPE html>
+<html>
+<head>
+
+    <base href="">
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="google" content="notranslate" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.5.0/css/bootstrap-datepicker.css" rel="stylesheet">
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+    <title>Login CCMA</title>
+
+</head>
+<body id="mainBody">
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+        <div class="navbar-collapse collapse">
+
+            <div class="pull-left" style="margin-left: 30%;">
+                
+            </div>
+        </div>
+    </nav>
+    <partial name="_CookieConsentPartial" />
+    <div class="col-lg-11">
+        <a asp-area="" asp-controller="Login" asp-action="">
+            <img class="logoHome"  src="~/images/Untitledtest.png" />
+        </a>
+    </div>
+    <div class="container logindiv">
+        <div style="text-align:center;" class="row">
+            @*<div style="position: absolute;
+             margin-left: 37%;
+            margin-top: 10%;">
+            <img style="width:105%" src="~/images/CenterImg.jpg" />
+            </div>*@
+            <div>
+                <div>
+                    <div>
+                        <button class="Ancircle" style="width: 155px;
+        height: 155px;
+        padding: 10px 16px;
+        border-radius: 48%;
+        font-size: 17px;
+        color:white;
+        border-width: 0px;
+        text-align: center;
+        background-color: black;" type="button">
+                            <a style="color: white;
+        text-decoration: none;" href="../DashBoardPredective">Conflict Analysis</a>
+                        </button>
+                    </div>
+                </div>
+                <div style="margin-top:-6%">
+                    <div>
+                        <button class="Ancircle" style="width: 155px;
+        height: 155px;
+        padding: 10px 16px;
+        color:white;
+        border-width: 0px;
+        border-radius: 48%;
+        font-size: 17px;
+        text-align: center;
+        margin-right: 13%;
+        background-color: black;" type="button" class="btn-circle.btn-x">
+                            <a href="" style="color: white;
+        text-decoration: none;">Information</a>
+                        </button>
+                        <button class="Ancircle" style="width: 155px;
+        height: 155px;
+        padding: 10px 16px;
+        border-radius: 48%;
+        color:white;
+        border-width: 0px;
+        font-size: 17px;
+        text-align: center;
+        margin-left:20%;
+         background-color: black;" type="button">
+                            <a href="../DashBoardDNW" style="color: white;
+        text-decoration: none;">Days Not Worked</a>
+
+                        </button>
+
+
+                    </div>
+
+                </div>
+                <div style="margin-top:-7%">
+                    <div>
+                        <button class="Ancircle" style="width: 155px;
+    height: 155px;
+    padding: 10px 16px;
+    border-radius: 48%;
+    font-size: 17px;
+    color:white;
+    border-width: 0px;
+    text-align: center;
+    margin-right:10%;
+    background-color: black;" type="button">
+                            <a href="../DasBoardGDP" style="color: white;
+    text-decoration: none;">Gross Domestic Product</a>
+
+                        </button>
+                        <img class="homepagelogo" src="~/images/CenterImg.jpg" />
+
+                        <button class="Ancircle" style="width: 155px;
+    height: 155px;
+    padding: 10px 16px;
+    border-radius: 48%;
+    font-size: 17px;
+    border-width: 0px;
+    color:white;
+    text-align: center;
+    margin-left:10%;
+    background-color: black;" type="button">
+                            <a href="../DashBoardUnEmp" style="color: white;
+    text-decoration: none;">Unemployment</a>
+
+                        </button>
+                    </div>
+                </div>
+                <div style="margin-top: -4%;">
+                    <div>
+                        <button class="Ancircle" style=" width: 155px;
+    height: 155px;
+    padding: 10px 16px;
+    border-radius: 48%;
+    font-size: 17px;
+    color:white;
+    border-width: 0px;
+    text-align: center;
+    margin-right: 40%;
+    background-color: black;
+    " value="Jobless">
+                            <a href="../DashBoardJobloss" style="color: white;
+    text-decoration: none;">Job Loss</a>
+
+                        </button>
+                        <button class="Ancircle" style=" width: 155px;
+    height: 155px;
+    padding: 10px 16px;
+    border-radius: 48%;
+    font-size: 17px;
+    border-width: 0px;
+    color:white;
+    text-align: center;
+    background-color: black;">
+                            <a href="../DashBoardCPI" style="color: white;
+    text-decoration: none;">CPI</a>
+                        </button>
+
+                    </div>
+                </div>
+                <div style="margin-top:-4%">
+                    <div style="margin-top:-6%">
+                        <button class="Ancircle" style=" width: 155px;
+    height: 155px;
+    padding: 10px 16px;
+    border-radius: 48%;
+    font-size: 17px;
+    border-width: 0px;
+    color:white;
+    text-align: center;
+    background-color: black;"
+                                value="">
+                            <a href="../DashBoardInflation" style="color: white;
+    text-decoration: none;">Inflation %</a>
+
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+</body>
+
+
+
+
+
+
+</html>

@@ -1,0 +1,104 @@
+﻿@model PredictiveTool.Models.PredAnalysisModel
+
+@{
+    var test = ViewContext.RouteData.Values["Action"].ToString();
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_LayoutMain.cshtml";
+}
+<div style="margin-left:4%">
+    <div class="col-xs-12 col-sm-12">
+        <div role="form" class='form-horizontal'>
+
+            <div class="form-group">
+                <div class="col-xs-1">
+                    <div class="checkbox">
+                        <label>
+                            <input id="hdntab" style="display:none" />
+                            <input id="chkdataID" class="Cbox" type="checkbox"> Data
+                        </label>
+                    </div>
+                </div>
+                <div class="col-xs-3">
+                    <div class="checkbox">
+                        <label>
+                            <input id="chkgpID" class="Cbox" type="checkbox"> Graph
+                        </label>
+                    </div>
+                </div>
+
+            </div>
+            <br />
+            <br />
+            <br />
+            <div class="form-group">
+                <div class="col-xs-2 text-left">
+                    <label class="label Graph" for="cpDesc">Graph</label>
+                </div>
+
+            </div>
+            <div class="mattop">
+
+                <button id="15" class="btn bgagr">Umemployed</button><button id="16" class="btn bgmq">Unemployment term</button>
+                <button id="18" class="btn bgwsl">Long Term Umemployed</button>
+
+            </div>
+
+            <div class="col-xs-12 col-sm-12 divblock">
+                <span>Data range</span>
+            </div>
+            <div class="form-group" style="margin-top:6%">
+                <div class="col-lg-1 text-left">
+                    <p class="datarange">Year From </p>
+                </div>
+                <div class="col-xs-2">
+                    @*<input type="number" class="form-control dtinclass" min="1900" max="2099" step="1" value="2000" />*@
+                    <div class='input-group date' id='datetimepicker1'>
+                        <input id="dtidfrom" type='date' class="form-control dtinclass" />
+                        <span class="input-group-addon">
+                            <span class="glyphicon glyphicon-calendar"></span>
+                        </span>
+                    </div>
+                    @*<input type="date" />*@
+
+                </div>
+                <div class="col-xs-1">
+                    <p class="datarange">To</p>
+                </div>
+                <div class="col-xs-2">
+                    @*<input id="dtidto" type="number" class="form-control dtinclass"  min="1900" max="2099" step="1" value="2020" />*@
+                    <div class='input-group date' id='datetimepicker1'>
+                        <input id="dtidto" type='date' class="form-control dtinclass" />
+                        <span class="input-group-addon">
+                            <span class="glyphicon glyphicon-calendar"></span>
+                        </span>
+                    </div>
+                </div>
+                <div class="col-xs-3">
+                    <button type="submit" onclick="return submitclick();" class="label subbtn"> Submit</button>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-12 divblock">
+                <span>Data</span>
+            </div>
+            <div class="tab-pane fade active in" id="sub11">
+                <div id="tblData"></div>
+            </div>
+            <div class="col-xs-12 col-sm-12 divblock">
+                <span>Graph</span>
+            </div>
+            <div id="divchartID" class="tab-pane fade active in" id="sub11">
+                <div id="container" style="width:100%; height:400px;"></div>
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+
+</div>
+<script src="~/lib/jquery/dist/jquery.js"></script>
+<script src="~/lib/jquery/dist/HighChart.js"></script>
+
+

@@ -1,0 +1,973 @@
+﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification\ 
+for details on configuring this project to bundle and minify static web assets. */
+body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+    font-size: 17px !important;
+    width: 1686px;
+    height: 100%;
+}
+
+#main-container {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    background-color: #0666a3;
+}
+
+.intbtn{
+    margin-top:-3%;
+
+}
+
+.wrapper {
+    width: 100%;
+}
+
+.box {
+    float: left;
+    height: 100px;
+    font-size: 40px;
+}
+
+    .box:nth-child(1) {
+        width: 15%;
+        height: auto;
+        padding-top: 4%;
+    }
+
+    .box:nth-child(2) {
+        width: 15%;
+        height: auto;
+       padding-top: 4%;
+    }
+
+    .box:nth-child(3) {
+        width: 16%;
+        height: auto;
+       padding-top: 4%;
+    }
+    .box:nth-child(4) {
+        width: 16%;
+        height: auto;
+       padding-top: 4%;
+    }
+    .box:nth-child(5) {
+        width: 16%;
+        height: auto;
+       padding-top: 4%;
+    }
+    .box:nth-child(6) {
+        width: 15%;
+        height: auto;
+       padding-top: 4%;
+    }
+    .box:nth-child(7) {
+        width: 15%;
+        height: auto;
+       padding-top: 4%;
+    }
+    .box:nth-child(8) {
+        width: 14%;
+        height: auto;
+       padding-top: 4%;
+    }
+    .box:nth-child(9) {
+        width: 16%;
+        height: auto;
+       padding-top: 4%;
+    }
+    .box:nth-child(10) {
+        width: 16%;
+        height: auto;
+       padding-top: 4%;
+    }
+    .box:nth-child(11) {
+        width: 16%;
+        height: auto;
+       padding-top: 4%;
+    }
+    .box:nth-child(12) {
+        width: 16%;
+        height: auto;
+       padding-top: 4%;
+    }
+    .box:nth-child(13) {
+        width: 16%;
+        height: auto;
+       padding-top: 4%;
+    }
+
+.grid-container {
+    width: 127%;
+    display: grid;
+    grid-template-columns: auto auto;
+    text-align: left;
+    justify-content: center;
+    align-items: center;
+}
+
+    .grid-container > div {
+        padding: 20px;
+    }
+
+
+    #main-container div {
+        background-color: #8ebf42;
+        padding: 10px;
+    }
+
+.shop-cat-box {
+    float:right;
+    text-align:end;
+    width: 23%;
+    margin-bottom: 30px;
+    position: relative;
+    padding: 4%;
+    /*overflow: hidden;*/
+    border: 0px solid #000000;
+    /*box-shadow: 9px 9px 30px 0px rgba(0, 0, 0, 0.3);*/
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+.custNav {
+    margin-left: 15%;
+    margin-right: 13%;
+}
+
+.logoclass {
+    position: absolute;
+    margin-top: -3%;
+    padding: 1.6rem;
+}
+
+    .logoclass > a {
+        background-color: inherit !important;
+    }
+
+    .logoclass > ul > li > a > img {
+        /*height: 144px;
+            width: 100%;*/
+    }
+
+
+.accuracydiv {
+   padding-top: 4%;
+    /*margin-left: -18%;*/
+}
+
+.accuracytop {
+   padding-top: 4%;
+}
+
+.bodyclass {
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url('/images/new 1.jpeg');
+    font-family: "Arial Narrow", Arial, sans-serif;
+}
+
+.home-bg {
+    background-image: url('/images/final 3.jpeg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: bottom center;
+}
+
+.highcharts-figure, .highcharts-data-table table {
+    /*min-width: 360px;
+    max-width: 800px;*/
+    margin: 1em auto;
+}
+
+/*#divtblID table, th, td {
+    border: 1px solid black;
+}*/
+
+.highcharts-data-table table {
+    font-family: Verdana, sans-serif;
+    border-collapse: collapse;
+    border: 1px solid #EBEBEB;
+    margin: 10px auto;
+    text-align: center;
+    width: 100%;
+    color: white;
+}
+
+.charddivclass {
+    width: 100%;
+    height: 400px;
+}
+
+.Outchartdivclass {
+    height: 448px;
+}
+
+
+.highcharts-data-table caption {
+    padding: 1em 0;
+    font-size: 1.2em;
+    color: #f7f5f5;
+}
+
+
+.highcharts-data-table th {
+    font-weight: 300;
+    padding: 0.5em;
+}
+
+.highcharts-data-table td, .highcharts-data-table th, .highcharts-data-table caption {
+    padding: 0.5em;
+}
+
+/*.highcharts-data-table thead tr, .highcharts-data-table tr:nth-child(even) {
+    background: #f1f7ff;
+}
+
+.highcharts-data-table tr:hover {
+    background: #f1f7ff;
+}*/
+
+
+label {
+    color: white;
+}
+
+.innerdiv {
+    margin-left: 3%;
+    margin-right: 3%;
+}
+
+.tbldicscrol {
+    width: 100%;
+    overflow: auto;
+    white-space: nowrap;
+    color: white;
+}
+
+.menumapping {
+    letter-spacing: 1px;
+    font-family: serif;
+    margin-left: 8%;
+}
+
+body > input {
+    border-color: black !important;
+}
+
+.Ancircle {
+    background-color: black;
+}
+
+    .Ancircle:hover {
+        background-color: #444 !important;
+    }
+
+    .Ancircle > a:hover {
+        background-color: #444 !important;
+    }
+
+.highcharts-button, .highcharts-legend, .highcharts-container > svg > text {
+    fill: white;
+}
+
+.logindiv {
+    margin-top: 1%;
+    margin-left: 17%;
+    position: absolute;
+}
+
+.homepagelogo {
+    width: 30%;
+    position: relative;
+}
+
+.dnwbtn {
+    background-color: #ffa07a;
+    height: 46px;
+    color: black !important;
+}
+
+    .dnwbtn:hover {
+        color: white !important;
+    }
+
+.btn-circle.btn-xl {
+    width: 70px !important;
+    height: 70px;
+    padding: 10px 16px;
+    font-size: 24px;
+    line-height: 1.33;
+    border-radius: 35px;
+}
+/*.btn-circle.btn-xl {
+    width: 70px;
+    height: 70px;
+    padding: 10px 16px;
+    border-radius: 35px;
+    font-size: 12px;
+    text-align: center;
+}*/
+
+
+.table-bordered {
+    border: 3px solid #232222 !important;
+}
+
+    .table-bordered > tbody > tr > th {
+        border: 3px solid #232222 !important;
+    }
+
+    .table-bordered > tbody > tr > td {
+        border: 3px solid #232222 !important;
+    }
+
+.Cbox {
+    transform: scale(2.0);
+}
+
+.cboxlabel {
+    padding-left: 1%;
+    color: white;
+}
+
+.clickclass {
+    border-width: 5px !important;
+}
+
+.menuclickclass {
+    background-color: darkgray;
+}
+
+.label {
+    color: white;
+    font-family: Arial;
+}
+
+.mar {
+    margin-left: -3.5%;
+    /*margin-left: 5%;*/
+    margin-top: 1%;
+}
+
+.chkmar {
+    margin-top: 0%;
+}
+
+.mattop {
+    /*margin-left: 21%;*/
+    /*margin-left: 7%;*/
+    margin-top: -3%;
+}
+
+.agb {
+    background-color: rgb(207, 241, 173)
+}
+
+.btn {
+    border: 0px solid black;
+    color: black;
+    font-size: 16px;
+    cursor: pointer;
+    margin: .3%;
+    font-family: "Source Sans Pro";
+    font-weight: bold;
+    font-style: normal;
+    text-decoration: none;
+    font-size: 17px;
+    color: black;
+}
+
+/* Green */
+.bgagr {
+    /*background: linear-gradient(rgba(112, 225, 0, 0.7), rgba(240, 240, 240, 0.5));*/
+    background-color: #9bd265;
+    padding: 14px 47px;
+    /*background-color: #bae88d;*/
+    /*background-color: rgba(112, 225, 0, 0.7);*/
+}
+
+    .bgagr:hover {
+        color: white;
+    }
+
+/* Blue */
+.bgmq {
+    background-color: skyblue;
+    padding: 13px 34px;
+}
+
+    .bgmq:hover {
+        color: white;
+    }
+
+/* Orange */
+.bgmnu {
+    background: #ff9800;
+    padding: 14px 47px;
+}
+
+    .bgmnu:hover {
+        color: white;
+    }
+
+/* Red */
+.bgwsl {
+    background: #c36a6a;
+    padding: 14px 47px;
+}
+
+#divgraphID button {
+    background-color: #333030 !important;
+    color: white;
+    float: right;
+    border-color: darkgrey;
+}
+
+    #divgraphID button:hover {
+        background-color: black !important;
+    }
+
+.information{
+    color:white;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.divblock {
+    background-color: #333030;
+    height: 35px;
+    width: 100%;
+    padding-top: 4%;
+    font-size: 17px;
+    font-weight: bold;
+    margin-top: 1%;
+}
+
+    .divblock > span {
+        position: absolute;
+        /*margin-top: 8px;*/
+        margin-top: -3%;
+    }
+
+.divblock1 {
+    background-color: black;
+    height: 23px;
+    width: 100%;
+   padding-top: 4%;
+}
+
+.bgwsl:hover {
+    color: white;
+}
+
+.logomain {
+    width: 12%;
+    height: 142px;
+}
+
+.logoHome {
+    width: 15%;
+    height: 169px;
+    margin-left: -2%;
+}
+/* Gray */
+.bgTrans {
+    background: #eded82;
+    padding: 14px 47px;
+}
+
+    .bgTrans:hover {
+        color: white;
+    }
+
+.bgUne {
+    background: #cc79cc;
+    padding: 13px 34px;
+}
+
+    .bgUne:hover {
+        color: white;
+    }
+
+.menu > li > a {
+    color: white !important;
+}
+
+nav > div > ul > li a:hover {
+    background-color: gray !important
+}
+
+.datarangemaster {
+    margin-top: 8%;
+}
+
+.col-xs-1 {
+    width: 5.333333% !important;
+}
+
+.DDN {
+    height: 47px;
+    font-size: 17px;
+    margin: -5%;
+    border-color: black;
+}
+
+.datarange {
+    text-align: left;
+    margin-top: 13%;
+    color: black;
+    font-weight: bold;
+}
+
+.dtinclass {
+    width: 100%;
+    height: 50px;
+}
+
+.datamargin {
+    margin-top: 6px;
+}
+
+.Data {
+    padding-top: 7%;
+    padding-bottom: 8%;
+    /*padding-left: 46%;*/
+    padding-right: 46%;
+    font-size: 100%;
+    /*background-color: black;*/
+}
+
+.subbtn {
+    width: 78%;
+    height: 43px;
+    background-color: #2cd4d4;
+    border-radius: 44px;
+    /*padding-top: 5%;
+    padding-bottom: 4%;
+    padding-left: 20%;
+    padding-right: 20%;
+    font-size: 100%;
+    background-color: #2cd4d4;
+    border-radius: 44px;
+    margin-left: 81px;
+    border-width: 0px;*/
+}
+
+    .subbtn:hover {
+        color: white;
+    }
+
+.bgman {
+    background-color: #1e5da6;
+    width: 73%;
+    height: 52px;
+}
+
+    .bgman:hover {
+        color: white !important;
+    }
+
+.bgwoman {
+    background-color: #c36a21;
+    width: 73%;
+    height: 52px;
+}
+
+    .bgwoman:hover {
+        color: white !important;
+    }
+
+
+
+.bgboth {
+    background-color: #62a73b;
+    width: 73%;
+    height: 52px;
+}
+
+    .bgboth:hover {
+        color: white !important;
+    }
+
+.bgunemp {
+    background-color: #1e5da6;
+    width: 73%;
+    height: 52px;
+}
+
+    .bgunemp:hover {
+        color: white !important;
+    }
+
+.bgterm {
+    background-color: #c36a21;
+    width: 73%;
+    height: 52px;
+}
+
+    .bgterm:hover {
+        color: white !important;
+    }
+
+.bgtermemp {
+    background-color: #62a73b;
+    width: 73%;
+    height: 52px;
+}
+
+    .bgtermemp:hover {
+        color: white !important;
+    }
+
+
+.ungraph {
+    padding-bottom: 8%;
+    padding-left: 15%;
+    padding-right: 38%;
+    font-size: 100%;
+    background-color: black;
+}
+
+    .ungraph > span {
+        margin-top: 17px;
+        position: absolute;
+    }
+
+.Graph {
+    padding-top: 4%;
+    padding-bottom: 10%;
+    padding-left: 44%;
+    padding-right: 64%;
+    font-size: 100%;
+    background-color: black;
+}
+
+    .Graph > span {
+        padding-top: 4%;
+        position: absolute;
+    }
+
+span {
+    color: white;
+    font-family: Arial;
+    font-size: 17px;
+}
+
+.Cbtn {
+    background-color: #ddd;
+    border: none;
+    color: black;
+    padding: 16px 32px;
+    text-align: center;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition: 0.3s;
+}
+
+    .Cbtn:hover {
+        background-color: steelblue;
+        color: white;
+    }
+
+/* Wrapping element */
+/* Set some basic padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Carousel */
+.carousel-caption p {
+    font-size: 20px;
+    line-height: 1.4;
+}
+
+/* Make .svg files in the carousel display properly in older browsers */
+.carousel-inner .item img[src$=".svg"] {
+    width: 100%;
+}
+
+/* QR code generator */
+#qrCode {
+    margin: 15px;
+}
+
+/* Hide/rearrange for smaller screens */
+@media screen and (max-width: 767px) {
+    /* Hide captions */
+    .carousel-caption {
+        display: none;
+    }
+}
+
+
+.progress {
+    width: 80px;
+    height: 80px;
+    line-height: 150px;
+    background: none;
+    margin: 0 auto;
+    box-shadow: none;
+    position: relative;
+}
+
+    .progress:after {
+        content: "";
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        border: 12px solid #fff;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    .progress > span {
+        width: 50%;
+        height: 100%;
+        overflow: hidden;
+        position: absolute;
+        top: 0;
+        z-index: 1;
+    }
+
+    .progress .progress-left {
+        left: 0;
+    }
+
+    .progress .progress-bar {
+        width: 100%;
+        height: 100%;
+        background: none;
+        border-width: 12px;
+        border-style: solid;
+        position: absolute;
+        top: 0;
+    }
+
+    .progress .progress-left .progress-bar {
+        left: 100%;
+        border-top-right-radius: 80px;
+        border-bottom-right-radius: 80px;
+        border-left: 0;
+        -webkit-transform-origin: center left;
+        transform-origin: center left;
+    }
+
+    .progress .progress-right {
+        right: 0;
+    }
+
+        .progress .progress-right .progress-bar {
+            left: -100%;
+            border-top-left-radius: 80px;
+            border-bottom-left-radius: 80px;
+            border-right: 0;
+            -webkit-transform-origin: center right;
+            transform-origin: center right;
+            animation: loading-1 1.8s linear forwards;
+        }
+
+    .progress .progress-value {
+        width: 90%;
+        height: 90%;
+        border-radius: 50%;
+        background: transparent;
+        font-size: 14px;
+        color: #fff;
+        line-height: 127px;
+        text-align: center;
+        position: absolute;
+        top: -28%;
+        left: 5%;
+    }
+
+    .progress.blue .progress-bar {
+        border-color: #049dff;
+    }
+
+    .progress.blue .progress-left .progress-bar {
+        animation: loading-2 1.5s linear forwards 1.8s;
+    }
+
+    .progress.yellow .progress-bar {
+        border-color: #fdba04;
+    }
+
+    .progress.yellow .progress-left .progress-bar {
+        animation: loading-3 1s linear forwards 1.8s;
+    }
+
+    .progress.pink .progress-bar {
+        border-color: #ed687c;
+    }
+
+    .progress.pink .progress-left .progress-bar {
+        animation: loading-4 0.4s linear forwards 1.8s;
+    }
+
+    .progress.green .progress-bar {
+        border-color: #1abc9c;
+    }
+
+    .progress.green .progress-left .progress-bar {
+        animation: loading-5 1.2s linear forwards 1.8s;
+    }
+
+@keyframes loading-1 {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(180deg);
+        transform: rotate(180deg);
+    }
+}
+
+@keyframes loading-2 {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(144deg);
+        transform: rotate(144deg);
+    }
+}
+
+@keyframes loading-3 {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(90deg);
+        transform: rotate(90deg);
+    }
+}
+
+@keyframes loading-4 {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(36deg);
+        transform: rotate(36deg);
+    }
+}
+
+@keyframes loading-5 {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(126deg);
+        transform: rotate(126deg);
+    }
+}
+
+@media only screen and (max-width: 990px) {
+    .progress {
+        margin-bottom: 20px;
+    }
+}
+
+.circlePercent {
+    position: relative;
+    width: 96px;
+    height: 96px;
+    border-radius: 50%;
+    background: orange
+}
+
+    .circlePercent:before,
+    .circlePercent > .progressEnd {
+        position: absolute;
+        z-index: 3;
+        top: 2px;
+        left: 45px;
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+        background: white;
+        -ms-transform-origin: 3px 46px;
+        transform-origin: 3px 46px;
+        content: ""
+    }
+
+    .circlePercent:after,
+    .circlePercent > .progress {
+        position: absolute;
+        -ms-transform-origin: 48px 48px;
+        transform-origin: 48px 48px;
+        z-index: 0;
+        top: 0;
+        left: 0;
+        width: 48px;
+        height: 96px;
+        border-radius: 48px 0 0 48px;
+        background: orange;
+        content: ""
+    }
+
+    .circlePercent.fiftyPlus:after {
+        background: white;
+        -ms-transform: rotate(180deg);
+        transform: rotate(180deg)
+    }
+
+    .circlePercent > .progress.progress {
+        background: white
+    }
+
+    .circlePercent > .counter {
+        position: absolute;
+        box-sizing: border-box;
+        z-index: 2;
+        width: 100px;
+        height: 100px;
+        margin-top: -2px;
+        margin-left: -2px;
+        border-radius: 50%;
+        border: 4px solid orange
+    }
+
+        .circlePercent > .counter:before {
+            position: absolute;
+            z-index: 1;
+            top: 50%;
+            margin-top: -13px;
+            width: 100%;
+            height: 26px;
+            font-size: 26px;
+            line-height: 26px;
+            font-family: sans-serif;
+            text-align: center;
+            color: white;
+            content: attr(data-percent) "%"
+        }
+
+        .circlePercent > .counter:after {
+            position: absolute;
+            width: 80px;
+            height: 80px;
+            top: 6px;
+            left: 6px;
+            border-radius: 50%;
+            background: orange;
+            content: ""
+        }
+
+        .circlePercent > .counter[data-percent="100"] {
+            background: white
+        }

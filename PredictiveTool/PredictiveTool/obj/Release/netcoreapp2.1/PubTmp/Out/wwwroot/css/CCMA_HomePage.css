@@ -1,0 +1,67 @@
+body {
+    color: black;
+    background-color: black;
+    margin: 0;
+    line-height: 1.3em;
+    font-size: 1.5em;
+    letter-spacing: 1px;
+    color: white;
+}
+
+.container {
+    width: 60%;
+    margin: auto;
+    padding: 20px;
+}
+
+.top_banner {
+    background-image: url(./homepage_bg.jpeg);
+    background-size: cover;
+    background-position: center;
+	/*background-attachment: fixed;*/
+    min-height: 60%;
+	width: 90%;
+	margin:auto;
+    text-align: center;
+    font-size: xx-large;
+    line-height: 2em;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.top_banner p {
+	color:coral;
+	font-weight:bolder;
+	font-size: 2em;
+}
+
+header {
+    font-size: 2.5em;
+    text-align: center;
+    font-weight: bold;
+    font-style: bold;
+    font-stretch: extra-expanded;
+	margin-top:15px;
+	margin-bottom:15px;
+	text-shadow: 2px 2px 5px #000000,2px 2px #000000,2px 2px #000000,2px 2px #000000,
+	2px 2px #000000,2px 2px #000000,2px 2px #000000,2px 2px #000000,2px 2px #000000;
+}
+
+.btn {
+    cursor: pointer;
+	float:right;
+	width:150px;
+	height:40px;
+	border: 1px solid black;
+    font-weight: bold;
+    padding-top: 10px;
+    background-color: white;
+	text-align:center;
+	margin-top:10px;
+	margin-bottom:30px;
+    color: black;
+    font-size: 15px;
+    text-decoration: none;
+}

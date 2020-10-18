@@ -1,0 +1,233 @@
+/* Header */
+.large-header {
+  position: relative;
+  width: 100%;
+  background: #333;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center center;
+  z-index: 1;
+}
+.image-1 {
+  position: absolute;
+  right: 0;
+  bottom: 50%;
+  transform: translate3d(0, 60%, 0);
+}
+.image-1::after {
+  content: "";
+  width: 180px;
+  height: 100px;
+  background: #9dcbf1;
+  border-radius: 100px/50px;
+  border-radius: 50%;
+  position: absolute;
+  left: 33%;
+  top: 41%;
+  -webkit-filter: blur(45px) brightness(0.85);
+  filter: blur(45px) brightness(0.85);
+  animation-name: glowing;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+@keyframes glowing {
+  0% {
+    background-color: #9dcbf1;
+    top: 43%;
+    opacity: 1;
+  }
+  80% {
+    background-color: #00e2fa;
+    opacity: 0.9;
+    top: 28%;
+  }
+  100% {
+    top: 23%;
+    opacity: 0;
+  }
+}
+.image-1 img {
+  width: 60vw;
+  height: auto;
+}
+.demo-1 .large-header {
+  background-image: url("../images/bg.jpg");
+}
+.content-wrapper {
+  position: absolute;
+  margin: 0;
+  padding: 1rem;
+  width: 45vw;
+  color: #f9f1e9;
+  text-align: center;
+  top: 50%;
+  left: 0;
+  transform: translate3d(0, -50%, 0);
+  z-index: 1;
+}
+
+.content-wrapper h1 {
+  text-transform: uppercase;
+  font-size: 3.8em;
+  letter-spacing: 0.1em;
+  margin-top: 1rem;
+  margin-bottom: 0;
+  font-weight: 700;
+  font-family: "Playfair Display", serif;
+}
+    .content-wrapper p {
+        font-weight: 300;
+        text-align: justify;
+        line-height: 1.5em;
+        padding: 1em;
+        padding-top: 0rem;
+        font-weight: 850;
+        font-family: "Arial Narrow", Arial, sans-serif;
+    }
+
+/***
+Button CSS
+****/
+/* Mixins */
+/* bg shortcodes */
+.bg-gradient1 span,
+.bg-gradient1:before {
+  background: #52a0fd;
+  background: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from(#52a0fd),
+    color-stop(80%, #00e2fa),
+    to(#00e2fa)
+  );
+  background: linear-gradient(to right, #52a0fd 0%, #00e2fa 80%, #00e2fa 100%);
+}
+
+/* General */
+.wrapper {
+  margin: 5% auto;
+  text-align: center;
+  -webkit-transform-style: perserve-3d;
+  transform-style: perserve-3d;
+  perspecive: 800px;
+}
+
+a {
+  text-decoration: none;
+}
+a:hover,
+a:focus,
+a:active {
+  text-decoration: none;
+}
+
+/* fancy Button */
+.fancy-button {
+  display: inline-block;
+  /* margin: 30px; */
+  font-family: "Montserrat", Helvetica, Arial, sans-serif;
+  font-size: 17px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+  position: relative;
+}
+.fancy-button:before {
+  content: "";
+  display: inline-block;
+  height: 40px;
+  position: absolute;
+  bottom: -5px;
+  left: 30px;
+  right: 30px;
+  z-index: -1;
+  border-radius: 30em;
+  -webkit-filter: blur(20px) brightness(0.95);
+  filter: blur(20px) brightness(0.95);
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+
+.fancy-button span {
+  display: inline-block;
+  padding: 18px 60px;
+  border-radius: 50em;
+  position: relative;
+  z-index: 2;
+  will-change: transform, filter;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+.fancy-button:focus,
+.fancy-button:active {
+  color: #ffffff;
+}
+.fancy-button:hover {
+  color: #ffffff;
+}
+.fancy-button:hover span {
+  -webkit-filter: brightness(1.05) contrast(1.05);
+  filter: brightness(1.05) contrast(1.05);
+  -webkit-transform: scale(0.95);
+  transform: scale(0.95);
+}
+.fancy-button:hover:before {
+  bottom: 0;
+  -webkit-filter: blur(10px) brightness(0.95);
+  filter: blur(10px) brightness(0.95);
+}
+.fancy-button.pop-onhover:before {
+  opacity: 0;
+  bottom: 10px;
+}
+.fancy-button.pop-onhover:hover:before {
+  bottom: -7px;
+  opacity: 1;
+  -webkit-filter: blur(20px);
+  filter: blur(20px);
+}
+.fancy-button.pop-onhover:hover span {
+  -webkit-transform: scale(1.04);
+  transform: scale(1.04);
+}
+.fancy-button.pop-onhover:hover:active span {
+  -webkit-filter: brightness(1) contrast(1);
+  filter: brightness(1) contrast(1);
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: all 0.15s ease-out;
+  transition: all 0.15s ease-out;
+}
+.fancy-button.pop-onhover:hover:active:before {
+  bottom: 0;
+  -webkit-filter: blur(10px) brightness(0.95);
+  filter: blur(10px) brightness(0.95);
+  -webkit-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+
+@media only screen and (max-width: 768px) {
+  .demo-1 .main-title {
+    font-size: 2em;
+  }
+  .content-wrapper {
+    width: 90vw;
+    top: 0;
+    transform: translate3d(0, 0, 0);
+  }
+  .content-wrapper p {
+    font-size: 0.75rem;
+    line-height: 1.25em;
+    padding: 0;
+  }
+  .image-1 img {
+    width: 100vw;
+    height: auto;
+  }
+}
